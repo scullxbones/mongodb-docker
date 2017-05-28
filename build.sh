@@ -15,11 +15,3 @@ docker build --build-arg mongodb_version=${MONGO_30} -t scullxbones/mongodb:3.0 
 docker build --build-arg mongodb_version=${MONGO_32} -t scullxbones/mongodb:3.2 .
 
 docker build --build-arg mongodb_version=${MONGO_34} -t scullxbones/mongodb:3.4 .
-
-docker push scullxbones/mongodb:2.6
-
-docker push scullxbones/mongodb:3.0
-
-docker push scullxbones/mongodb:3.2
-
-docker push scullxbones/mongodb:3.4

@@ -11,3 +11,10 @@ services:
 
 script:
   - ./build.sh
+
+after_success:
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+  - docker push scullxbones/mongodb:2.6
+  - docker push scullxbones/mongodb:3.0
+  - docker push scullxbones/mongodb:3.2
+  - docker push scullxbones/mongodb:3.4
