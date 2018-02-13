@@ -18,3 +18,4 @@ after_success:
   - docker push scullxbones/mongodb:3.0
   - docker push scullxbones/mongodb:3.2
   - docker push scullxbones/mongodb:3.4
+  - docker push scullxbones/mongodb:3.6
